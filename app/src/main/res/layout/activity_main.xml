@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#CCCDCD"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/select_dice_text"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:background="#CCCDCD"
+        android:text="@string/select_dice"
+        android:textAlignment="center"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/imageButton_d4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="16dp"
+        android:adjustViewBounds="true"
+        android:background="?android:attr/panelBackground"
+        android:maxWidth="@dimen/dice_button_width"
+        android:scaleType="fitCenter"
+        app:layout_constraintBottom_toTopOf="@+id/imageButton_d6"
+        app:layout_constraintEnd_toStartOf="@+id/imageButton_d10"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/select_dice_text"
+        app:srcCompat="@drawable/d4" />
+
+    <ImageButton
+        android:id="@+id/imageButton_d6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="60dp"
+        android:adjustViewBounds="true"
+        android:background="?android:attr/panelBackground"
+        android:maxWidth="@dimen/dice_button_width"
+        android:scaleType="fitCenter"
+        app:layout_constraintBottom_toTopOf="@+id/imageButton_d8"
+        app:layout_constraintEnd_toStartOf="@+id/imageButton_d12"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageButton_d4"
+        app:srcCompat="@drawable/d6" />
+
+    <ImageButton
+        android:id="@+id/imageButton_d8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="60dp"
+        android:layout_marginBottom="16dp"
+        android:adjustViewBounds="true"
+        android:background="?android:attr/panelBackground"
+        android:maxWidth="@dimen/dice_button_width"
+        android:scaleType="fitCenter"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/imageButton_d20"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageButton_d6"
+        app:srcCompat="@drawable/d8" />
+
+    <ImageButton
+        android:id="@+id/imageButton_d10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="60dp"
+        android:adjustViewBounds="true"
+        android:background="?android:attr/panelBackground"
+        android:maxHeight="@dimen/dice_button_width"
+        android:scaleType="fitCenter"
+        app:layout_constraintBottom_toTopOf="@+id/imageButton_d12"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.487"
+        app:layout_constraintStart_toEndOf="@+id/imageButton_d4"
+        app:layout_constraintTop_toBottomOf="@+id/select_dice_text"
+        app:srcCompat="@drawable/d10" />
+
+    <ImageButton
+        android:id="@+id/imageButton_d12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="60dp"
+        android:adjustViewBounds="true"
+        android:background="?android:attr/panelBackground"
+        android:maxWidth="@dimen/dice_button_width"
+        android:scaleType="fitCenter"
+        app:layout_constraintBottom_toTopOf="@+id/imageButton_d20"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.571"
+        app:layout_constraintStart_toEndOf="@+id/imageButton_d6"
+        app:layout_constraintTop_toBottomOf="@+id/imageButton_d10"
+        app:srcCompat="@drawable/d12" />
+
+    <ImageButton
+        android:id="@+id/imageButton_d20"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="60dp"
+        android:layout_marginBottom="16dp"
+        android:adjustViewBounds="true"
+        android:background="?android:attr/panelBackground"
+        android:maxWidth="@dimen/dice_button_width"
+        android:scaleType="fitCenter"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imageButton_d8"
+        app:layout_constraintTop_toBottomOf="@+id/imageButton_d12"
+        app:srcCompat="@drawable/d20" />
+</androidx.constraintlayout.widget.ConstraintLayout>
