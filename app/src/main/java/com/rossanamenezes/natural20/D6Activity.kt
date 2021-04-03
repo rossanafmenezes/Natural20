@@ -6,13 +6,14 @@ import android.view.View
 import android.widget.Button
 import android.widget.TextView
 
-class D8 : AppCompatActivity() {
+class D6Activity : AppCompatActivity() {
+
     var quantity = 0
     var sum = 0
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_d8)
+        setContentView(R.layout.activity_d6)
 
         var buttonDecrease: Button = findViewById(R.id.button_decrease)
         buttonDecrease.setOnClickListener {
@@ -48,7 +49,7 @@ class D8 : AppCompatActivity() {
 
     private fun rollDice() {
 
-        val diceRange = 1..8
+        val diceRange = 1..6
         sum = 0
         for (i in 1..quantity) {
 

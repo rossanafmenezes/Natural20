@@ -6,7 +6,7 @@ import android.widget.Button
 import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
 
-class D4 : AppCompatActivity() {
+class D4Activity : AppCompatActivity() {
 
     var quantity = 0
     var sum = 0
