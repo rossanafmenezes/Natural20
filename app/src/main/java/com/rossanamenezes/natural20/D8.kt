@@ -1,26 +1,25 @@
 package com.rossanamenezes.natural20
 
+import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
 import android.widget.Button
 import android.widget.TextView
-import androidx.appcompat.app.AppCompatActivity
 
-class D4 : AppCompatActivity() {
-
+class D8 : AppCompatActivity() {
     var quantity = 0
     var sum = 0
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_d4)
+        setContentView(R.layout.activity_d8)
 
-        var buttonDecrease: Button = findViewById(R.id.button_decreased4)
+        var buttonDecrease: Button = findViewById(R.id.button_decrease)
         buttonDecrease.setOnClickListener {
             decrement(it)
         }
 
-        var buttonIncrease: Button = findViewById(R.id.button_increased4)
+        var buttonIncrease: Button = findViewById(R.id.button_increase)
         buttonIncrease.setOnClickListener{
             increment(it)
         }
@@ -37,7 +36,6 @@ class D4 : AppCompatActivity() {
             resetAll()
 
         }
-
     }
 
     private fun resetAll() {
@@ -48,10 +46,10 @@ class D4 : AppCompatActivity() {
 
     }
 
-     private fun rollDice() {
+    private fun rollDice() {
 
-        val diceRange = 1..4
-         sum = 0
+        val diceRange = 1..8
+        sum = 0
         for (i in 1..quantity) {
 
             sum += diceRange.random()
@@ -60,7 +58,7 @@ class D4 : AppCompatActivity() {
         displayTotal(sum)
     }
 
-     private fun displayTotal(total: Int) {
+    private fun displayTotal(total: Int) {
 
         var textViewTotal: TextView = findViewById(R.id.textView_total)
         textViewTotal.text = total.toString()
@@ -94,8 +92,4 @@ class D4 : AppCompatActivity() {
         textViewDiceQty.text = quantity.toString()
 
     }
-
 }
-
-
-

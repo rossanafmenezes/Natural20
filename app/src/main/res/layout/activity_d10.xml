@@ -4,10 +4,10 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".D4">
+    tools:context=".D10">
 
     <ImageView
-        android:id="@+id/imageView_d4"
+        android:id="@+id/imageView_dice"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="50dp"
@@ -17,10 +17,10 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/d4" />
+        app:srcCompat="@drawable/d10" />
 
     <Button
-        android:id="@+id/button_decreased4"
+        android:id="@+id/button_decrease"
         android:layout_width="53dp"
         android:layout_height="53dp"
         android:layout_marginStart="16dp"
@@ -28,13 +28,13 @@
         android:text="-"
         android:textSize="24sp"
         android:textStyle="bold"
-        app:backgroundTint="#3F51B5"
-        app:layout_constraintBaseline_toBaselineOf="@+id/button_increased4"
+        app:backgroundTint="#166DB1"
+        app:layout_constraintBaseline_toBaselineOf="@+id/button_increase"
         app:layout_constraintEnd_toStartOf="@+id/textView_dice_qty"
         app:layout_constraintStart_toStartOf="parent" />
 
     <Button
-        android:id="@+id/button_increased4"
+        android:id="@+id/button_increase"
         android:layout_width="53dp"
         android:layout_height="53dp"
         android:layout_marginTop="16dp"
@@ -44,13 +44,13 @@
         android:textColor="#FFFFFF"
         android:textSize="24sp"
         android:textStyle="bold"
-        app:backgroundTint="#3F51B5"
+        app:backgroundTint="#166DB1"
         app:iconPadding="0dp"
         app:layout_constraintBottom_toTopOf="@+id/textView_total"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toEndOf="@+id/textView_dice_qty"
-        app:layout_constraintTop_toBottomOf="@+id/textView_dicenumber_d4"
+        app:layout_constraintTop_toBottomOf="@+id/textView_dicenumber"
         app:layout_constraintVertical_bias="0.333" />
 
     <TextView
@@ -61,13 +61,13 @@
         android:text="0"
         android:textSize="24sp"
         android:textStyle="bold"
-        app:layout_constraintBaseline_toBaselineOf="@+id/button_decreased4"
-        app:layout_constraintEnd_toStartOf="@+id/button_increased4"
+        app:layout_constraintBaseline_toBaselineOf="@+id/button_decrease"
+        app:layout_constraintEnd_toStartOf="@+id/button_increase"
         app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toEndOf="@+id/button_decreased4" />
+        app:layout_constraintStart_toEndOf="@+id/button_decrease" />
 
     <TextView
-        android:id="@+id/textView_dicenumber_d4"
+        android:id="@+id/textView_dicenumber"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
@@ -79,7 +79,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.496"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView_d4"
+        app:layout_constraintTop_toBottomOf="@+id/imageView_dice"
         app:layout_constraintVertical_bias="0.2" />
 
     <TextView
@@ -103,7 +103,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
         android:text="@string/roll_button"
-        app:backgroundTint="#3F51B5"
+        app:backgroundTint="#166DB1"
         app:layout_constraintBottom_toTopOf="@+id/textView_total"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -116,7 +116,7 @@
         android:layout_marginBottom="16dp"
         android:text="Reset"
         android:textSize="10sp"
-        app:backgroundTint="#3F51B5"
+        app:backgroundTint="#166DB1"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />

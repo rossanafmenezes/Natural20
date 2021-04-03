@@ -19,6 +19,27 @@ class MainActivity : AppCompatActivity() {
             startActivity(intentD4)
         }
 
+        val buttonD6: ImageButton = findViewById(R.id.imageButton_d6)
+        buttonD6.setOnClickListener{
+
+            val intentD6 = Intent(this, D6::class.java)
+            startActivity(intentD6)
+        }
+
+        val buttonD8: ImageButton = findViewById(R.id.imageButton_d8)
+        buttonD8.setOnClickListener{
+            val intentD8 = Intent (this, D8::class.java)
+            startActivity(intentD8)
+        }
+
+        val buttonD10: ImageButton = findViewById(R.id.imageButton_d10)
+        buttonD10.setOnClickListener {
+            val intentD10 = Intent(this, D10::class.java)
+            startActivity(intentD10)
+        }
+
+
+
     }
 
 

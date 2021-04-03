@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#CCCDCD"
+    android:background="#FFFFFF"
     tools:context=".MainActivity">
 
     <TextView
@@ -12,7 +12,7 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="32dp"
-        android:background="#CCCDCD"
+        android:background="#FFFFFF"
         android:text="@string/select_dice"
         android:textAlignment="center"
         android:textSize="18sp"
@@ -23,6 +23,8 @@
 
     <ImageButton
         android:id="@+id/imageButton_d4"
+        style="@style/SelectableItemBackground"
+        android:foreground="?android:attr/selectableItemBackground"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="60dp"
@@ -39,6 +41,8 @@
 
     <ImageButton
         android:id="@+id/imageButton_d6"
+        style="@style/SelectableItemBackground"
+        android:foreground="?android:attr/selectableItemBackground"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="60dp"
@@ -54,6 +58,8 @@
 
     <ImageButton
         android:id="@+id/imageButton_d8"
+        style="@style/SelectableItemBackground"
+        android:foreground="?android:attr/selectableItemBackground"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="60dp"
@@ -70,6 +76,8 @@
 
     <ImageButton
         android:id="@+id/imageButton_d10"
+        style="@style/SelectableItemBackground"
+        android:foreground="?android:attr/selectableItemBackground"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
@@ -87,6 +95,8 @@
 
     <ImageButton
         android:id="@+id/imageButton_d12"
+        style="@style/SelectableItemBackground"
+        android:foreground="?android:attr/selectableItemBackground"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginEnd="60dp"
@@ -103,6 +113,8 @@
 
     <ImageButton
         android:id="@+id/imageButton_d20"
+        style="@style/SelectableItemBackground"
+        android:foreground="?android:attr/selectableItemBackground"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginEnd="60dp"
